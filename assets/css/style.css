@@ -49,3 +49,47 @@
 .lifebar .life.danger {
   background-color: #ef4444;
 }
+
+.results {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.win {
+  color: #22d3ee;
+}
+
+.lose {
+  color: #fdba74;
+}
+
+.btn {
+  color: #18181b;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.atk {
+  background-color: #fbbf24;
+}
+
+.special {
+  background-color: #c084fc;
+}
+
+.heal {
+  background-color: #34d399;
+}
+
+.giveup {
+  background-color: #ef4444;
+}
+
+.new {
+  background-color: #22d3ee;
+}

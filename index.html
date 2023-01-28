@@ -33,8 +33,19 @@
         </div>
       </section>
     </section>
-    <section class="panel results"> results </section>
-    <section class="panel controlls"> controlls </section>
+    <section v-if="hasResult" class="panel results">
+      <p class="win" v-if="monsterLife === 0">Yeah! Voce matou o monstro 🧙🏻‍♂️</p>
+      <p class="lose" v-else> Ah não! o monstro te matou 👹</p>
+    </section>
+    <section class="panel controlls"> 
+      <template v-if="running">
+        <button class="btn atk">Atacar</button>
+        <button class="btn special">Especial</button>
+        <button class="btn heal">Curar</button>
+        <button class="btn giveup" @click="giveUp">Desistir</button>
+      </template>
+      <button v-else class="btn new" @click="startGame">Novo jogo</button>
+    </section>
     <section class="panel logs"> logs </section>
 
   </div>
