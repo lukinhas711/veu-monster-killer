@@ -1,7 +1,8 @@
 new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!'
+    playerLife: 100,
+    monsterLife:20
   },
   computed: {},
   methods: {},

@@ -10,7 +10,29 @@
 </head>
 <body>
   <div id="app">
-    <section class="panel scores"> {{ message }} </section>
+    <section class="panel scores">
+      <section class="score">
+        <h2>Jogador</h2>
+        <div class="lifebar">
+          <div 
+            class="life"
+            :class="{danger: playerLife < 25}"
+            :style="{width: playerLife + '%'}"
+          ></div>
+          <div>{{ playerLife }}%</div>
+        </div>
+      </section>
+      <section class="score">
+        <h2>Monstro</h2>
+        <div class="lifebar">
+          <div class="life"
+          :class="{danger: monsterLife < 25}"
+          :style="{width: monsterLife + '%'}"
+          ></div>
+          <div>{{ monsterLife }}%</div>
+        </div>
+      </section>
+    </section>
     <section class="panel results"> results </section>
     <section class="panel controlls"> controlls </section>
     <section class="panel logs"> logs </section>

@@ -20,3 +20,32 @@
   padding: 2em 1em;
   border-bottom: 1px solid #f4f4f5;
 }
+
+.scores {
+  display: flex;
+}
+
+.score {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lifebar {
+  width: 80%;
+  height: 20px;
+  border: 1px solid #a1a1aa;
+  margin: 5px auto;
+}
+
+.lifebar .life {
+  height: 100%;
+  background-color: #22c55e;
+  margin-bottom: 5px;
+}
+
+.lifebar .life.danger {
+  background-color: #ef4444;
+}
