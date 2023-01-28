@@ -39,8 +39,8 @@
     </section>
     <section class="panel controlls"> 
       <template v-if="running">
-        <button class="btn atk">Atacar</button>
-        <button class="btn special">Especial</button>
+        <button @click="attack(false)" class="btn atk">Atacar</button>
+        <button @click="attack(true)" class="btn special">Especial</button>
         <button class="btn heal">Curar</button>
         <button class="btn giveup" @click="giveUp">Desistir</button>
       </template>
