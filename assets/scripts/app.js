@@ -20,6 +20,14 @@ new Vue({
       const hit = this.getRandon(min + plus, max + plus)
       this[atr] = Math.max(this[atr] - hit, 0)
     },
+    heal(min, max){
+      const heal = this.getRandon(min, max)
+      this.playerLife = Math.min(this.playerLife + heal, 100)
+    },
+    healAndHurt() {
+      this.heal(10, 15)
+      this.hit('playerLife', 7, 12, false)
+    },
     startGame() {
       this.running = true;
       this.playerLife = 100;
